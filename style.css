@@ -1,0 +1,135 @@
+* {
+    background: #E7D3D3;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 5%;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.text-area {
+    border: none;
+    color: #e76422;
+    margin-top: 10px;
+    text-transform: lowercase;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    color: #e76422;
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+.mensaje {
+    background-image: url("/Imagenes/Gato.png");
+    background-repeat: no-repeat;
+    background-size: contain; /* Cambia a 'cover' o 'contain' según necesites */
+    background-position: center; /* Centra la imagen */
+    outline: none;
+    border-radius: 24px;
+    color: #e76422;
+    margin-top: 20px;
+    padding-left: 20px;
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+}
+
+.mensaje:focus {
+    outline: none;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+    flex-wrap: wrap;
+}
+
+.boton-desencriptar, .boton-encriptar, .copiar, .limpiar {
+    border-radius: 24px;
+    cursor: pointer;
+    height: 67px;
+    width: 250px;
+    margin: 10px;
+    border: 1px solid #320E3B;
+}
+
+.boton-encriptar {
+    background: #e0713b;
+    color: white;
+}
+
+.boton-desencriptar {
+    background: #e0713b;
+    color: white;
+}
+
+.copiar, .limpiar {
+    background: #e0713b;
+    color: white;
+    width: 150px;
+}
+
+.informacion {
+    color: rgb(117, 35, 138);
+    font-size: 18px;
+}
+
+.output-section {
+    width: 35%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    color: #320E3B; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    padding: 20px; /* Espaciado interno */
+    position: relative; /* Posicionamiento relativo */
+    bottom: 0; /* Para que esté en la parte inferior */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+}
+
+footer a {
+    color: #8b168f; /* Color del enlace */
+}
+
+
+.mensaje-informativo {
+    color: gray; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    margin-top: 10px; /* Espaciado superior */
+    display: block; /* Ocultar por defecto */
+}
+
+.boton-encriptar:hover, .boton-desencriptar:hover, .copiar:hover, .limpiar:hover {
+    background: #c56f28; /* Color más oscuro o un tono diferente */
+    transform: scale(1.05); /* Efecto de aumento */
+    transition: all 0.3s ease;
+}
