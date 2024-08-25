@@ -1,0 +1,159 @@
+* {
+    background: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem; /* Usar rem para una mejor escalabilidad */
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 5%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las secciones se envuelvan */
+    justify-content: center; /* Centrar contenido */
+    align-items: flex-start; /* Alinea las secciones al inicio */
+    margin: 20px; /* Espaciado uniforme */
+}
+
+.text-area {
+    border: none;
+    color: #e76422;
+    margin-top: 10px;
+    text-transform: lowercase;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    color: #e76422;
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+.mensaje {
+    background-image: url("/Imagenes/Gato.png");
+    background-repeat: no-repeat;
+    background-size: contain; /* Cambia a 'cover' o 'contain' según necesites */
+    background-position: center; /* Centra la imagen */
+    outline: none;
+    border-radius: 24px;
+    color: #e76422;
+    margin-top: 20px;
+    padding-left: 20px;
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+}
+
+.mensaje:focus {
+    outline: none;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+    flex-wrap: wrap; /* Permitir que los botones se ajusten */
+}
+
+.boton-desencriptar,
+.boton-encriptar,
+.copiar,
+.limpiar {
+    border-radius: 24px;
+    cursor: pointer;
+    height: 67px;
+    width: 200px; /* Cambiar a un tamaño más flexible */
+    margin: 10px;
+    border: 1px solid #320E3B;
+}
+
+.boton-encriptar {
+    background: #e0713b;
+    color: white;
+}
+
+.boton-desencriptar {
+    background: #e0713b;
+    color: white;
+}
+
+.copiar,
+.limpiar {
+    background: #e0713b;
+    color: white;
+    width: 150px;
+}
+
+.informacion {
+    color: rgb(117, 35, 138);
+    font-size: 1rem; /* Ajustar el tamaño de fuente */
+}
+
+.output-section {
+    width: 100%; /* Hacer que ocupe el 100% del ancho en dispositivos pequeños */
+    max-width: 500px; /* Limitar el ancho máximo en pantallas grandes */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    color: #320E3B;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #8b168f;
+}
+
+.mensaje-informativo {
+    color: gray;
+    text-align: center;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Apilar secciones en dispositivos pequeños */
+        align-items: center;
+    }
+
+    .text-area {
+        width: 90%; /* Ajustar ancho en dispositivos pequeños */
+    }
+
+    .mensaje {
+        height: 200px; /* Ajustar altura en dispositivos pequeños */
+    }
+
+    .botones {
+        flex-direction: column; /* Botones en columna */
+    }
+
+    .boton-encriptar,
+    .boton-desencriptar,
+    .copiar,
+    .limpiar {
+        width: 100%; /* Botones ocupan todo el ancho */
+    }
+}
