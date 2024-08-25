@@ -44,7 +44,7 @@ main {
 }
 
 .mensaje {
-    background-image: url("/Imagenes/Gato.png");
+    background-image: url("./Imagenes/Gato.png");
     background-repeat: no-repeat;
     background-size: contain; /* Cambia a 'cover' o 'contain' según necesites */
     background-position: center; /* Centra la imagen */
